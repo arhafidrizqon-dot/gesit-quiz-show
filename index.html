@@ -1846,9 +1846,9 @@
           var bar = Math.floor(musicStep / 8) % 4;
           var pos = musicStep % 8;
           var chord = CHORDS[bar];
-          musicNote(chord[pos % 4] * 2, 0.22, 0.028, 0);
-          if (pos % 2 === 0) musicNote(chord[0], 0.4, 0.035, 0);
-          if (musicStep % 2 === 0) musicNote(MELODY[(musicStep / 2) % 16], 0.24, 0.02, 0);
+          musicNote(chord[pos % 4] * 2, 0.22, 0.11, 0);
+          if (pos % 2 === 0) musicNote(chord[0], 0.4, 0.14, 0);
+          if (musicStep % 2 === 0) musicNote(MELODY[(musicStep / 2) % 16], 0.24, 0.1, 0);
           musicStep++;
         }, 218);
       }
